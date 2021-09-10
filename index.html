@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="stye.css">
+    <title>Document</title>
+  </head>
+  <body onload="initialCardDdata()">
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="Imageurl" class="form-label">Image URL</label>
+              <input type="url" class="form-control" id="Imageurl" aria-describedby="Image URL">
+            </div>
+
+            <div class="mb-3">
+              <label for="Tasktitle" class="form-label">Task title</label>
+              <input type="text" class="form-control" id="Tasktitle" aria-describedby="Text Title">
+            </div>
+
+            <div class="mb-3">
+              <label for="Tasktype" class="form-label">Task type</label>
+              <input type="text" class="form-control" id="Tasktype" aria-describedby="Text type">
+            </div>
+
+            <div class="mb-3">
+              <label for="Taskdescription" class="form-label">Text description</label>
+              <textarea type="text" class="form-control" id="Taskdescription" aria-describedby="Textdescription"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" onclick="save()" data-bs-dismiss="modal">SaveChanges</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold text-primary" href="#"><u>Taskin</u></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      
+          </ul>
+         
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <i class="fas fa-plus"></i> Add New</button>
+              
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container">
+    <section class="search__section">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+          </div>
+          <div class="col search__element ">
+            
+              <div class="input-group mb-3 mt-3 shadow">
+                <input type="text" class="form-control" aria-label="Search__here" aria-describedby="inputGroup-sizing-default" placeholder="search here">
+                <span class="input-group-text" id="inputGroup-sizing-default"><i class="fas fa-search"></i></span>
+              </div>
+            
+          </div>
+          <div class="col">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="row task__container">
+      <!-- <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card">
+          <div class="card-header d-flex justify-content-end gap-2">
+            <button type="button" class="btn btn-outline-success"><i class="fas fa-pen"></i></button>
+            <button type="button" class="btn btn-outline-success"><i class="fas fa-trash"></i></button>
+          </div>
+          <div class="card-body">
+            <img src="..." class="card-img-top" alt="...">
+            <h5 class="card-title mt-3 fw-bold text-primary">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  </body>
+</html>
